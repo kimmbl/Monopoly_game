@@ -1,0 +1,324 @@
+.responsive-game {
+    background: ghostwhite;
+    width: 52vw;
+    height: 43vw;
+    margin: 10px auto;
+}
+
+.mainSquare {
+    height: 100%;
+    outline-offset: -13px;
+}
+
+.row-game {
+    width: 100%;
+    display: flex;
+}
+
+.top-game {
+    height: 15.384615385%;
+}
+
+.center-game {
+    height: 69.23076923%;
+}
+.square1 {
+    outline: 1px solid black;
+    flex-grow: 1;
+    position: relative;
+}
+
+.square2 {
+    flex-grow: 2;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.square9 {
+    flex-grow: 9;
+    outline: 1px solid black;
+}
+
+.squareSide {
+    outline: 1px solid black;
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.header-game {
+    height: 21%;
+    position: absolute;
+    outline: 1px solid black;
+    background: grey;
+}
+
+.headerSide {
+    width: 21%;
+    position: absolute;
+    outline: 1px solid black;
+}
+
+.header-top {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.header-bottom {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.header-left {
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: grey;
+}
+
+.header-right {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: grey;
+}
+
+.firstLine {
+    position: absolute;
+    font-size: 0.65vw;
+    font-weight: 500;
+    line-height: 1vw;
+}
+
+.firstLine-top {
+    left: 1px;
+    right: 1px;
+    bottom: 30%;
+    height: 10%;
+    text-align: center;
+}
+
+.firstLine-left {
+    top: 16%;
+    right: 27%;
+    text-align: right;
+}
+
+.firstLine-left.chance {
+    top: 30%;
+    right: 27%;
+}
+
+.firstLine-right {
+    top: 16%;
+    bottom: 0;
+    left: 27%;
+}
+
+.firstLine-right.chance, .firstLine-right.fine {
+    top: 30%;
+    left: 27%;
+}
+
+.firstLine-bottom {
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+}
+
+
+.white {
+    background-color: #F5EBEF;
+}
+
+.prints {
+    background-color: #622A06;
+    color: white;
+}
+
+.fine {
+    background-color: #555152;
+    color: white;
+}
+
+.science {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FE9696;
+    border: black;
+}
+
+.topSide.science {
+    background: linear-gradient(360deg,#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FE9696;
+    border: black;
+}
+
+.leftSide.science {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FE9696;
+}
+
+.rightSide.science {
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FE9696;
+}
+
+.sections {
+    background: #79EFF5;
+}
+
+.club {
+    background-color: #F56EEB;
+}
+
+.leftSide.webpage {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #5856C4;
+}
+
+.topSide.webpage {
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #5856C4;
+}
+
+.school {
+    background-color: #F5AC33;
+}
+
+.chance {
+    color: white;
+}
+
+.program {
+    background-color: #F53E49;
+    color: white;
+}
+
+.classes {
+    background-color: #F5F34A;
+}
+
+.dormitory {
+    background-color: #327F2A;
+    color: white;
+}
+
+.festival {
+    background-color: #111272;
+    color: white;
+}
+
+.leftSide.chance {
+    background: linear-gradient(90deg, rgba(187,68,208,1) 0%, rgba(149,149,173,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+.rightSide.chance {
+    background: linear-gradient(270deg, rgba(187,68,208,1) 0%, rgba(149,149,173,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+.topSide.chance {
+    background: linear-gradient(180deg, rgba(187,68,208,1) 0%, rgba(149,149,173,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+.bottomSide.chance {
+    background: linear-gradient(360deg, rgba(187,68,208,1) 0%, rgba(149,149,173,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+.rotation2 {
+    padding-bottom: 3.5vw;
+}
+
+.logoBox {
+    width: 30%;
+    background: #3361ff;
+    position: absolute;
+    border: 3px solid black;
+    text-align: center;
+    box-shadow: inset 0px 2px 12px 0px #0b2682;
+    margin: 10vw 3vw;
+}
+
+.logoName {
+    font-size: 6vw;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-shadow: -2px 2px 0px black;
+}
+
+
+.corner {
+    position: absolute;
+    text-align: center;
+    line-height: 1vw;
+    font-size: 1vw;
+}
+
+.corner21 {
+    transform: translateX(21%) translateY(12%);
+    content: url("/img/board/freeparking.svg");
+    height: 5.5vw;
+}
+
+.corner31 {
+    transform: translateX(21%) translateY(12%);
+    content: url("/img/board/gotoprison.svg");
+    height: 5.5vw;
+}
+
+.corner1 {
+    transform: translateX(21%) translateY(12%);
+    content: url("/img/board/start.svg");
+    height: 5.5vw;
+}
+
+.corner11 {
+    transform: translateX(21%) translateY(12%);
+    content: url("/img/board/prison.svg");
+    line-height: 1vw;
+    height: 5.5vw;
+}
+
+.squareCorner {
+    height: 65%;
+    width: 65%;
+    border: 2px solid black;
+    right: -1px;
+    top: -1px;
+    position: absolute;
+}
+
+.corner4-left {
+    position: absolute;
+    transform: rotateZ(90deg) translateX(80%) translateY(-36%);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.corner4-bottom {
+    position: absolute;
+    transform: translateX(100%) translateY(310%);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.player-tokens {
+    display: inline-block;
+    position: absolute;
+}
+
+.player-pawn {
+    margin-left: 0.2vw;
+    height: 1.5vw;
+}
+
+.rightSide.player-tokens {
+    left: 1.8vw;
+}
+
+.bottomSide.player-tokens {
+    top: 1.5vw;
+}
+
+.topSide.player-tokens {
+    top: 0.3vw;
+}
+

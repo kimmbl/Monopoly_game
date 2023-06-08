@@ -1,0 +1,33 @@
+.missions {
+    width: 100%;
+    border-radius: 6px;
+    color: lightblue;
+}
+
+.missions::-moz-progress-bar {
+    background: darkgreen;
+    border-radius: 6px;
+}
+
+.warning-chat {
+    color: #FF293F;
+    font-size: 20px;
+}
+
+.chat {
+    text-align: left;
+}
+
+.chat-container {
+    max-height: 350px!important;
+    min-height: 350px!important;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.write-message {
+    max-width: 91%!important;
+}
+
+

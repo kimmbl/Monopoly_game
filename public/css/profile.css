@@ -1,0 +1,12 @@
+.crop {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 150px;
+}
+
+.img-avatar {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}

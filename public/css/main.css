@@ -1,0 +1,26 @@
+body {
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary{
+    background-color: #0066CA !important;
+}
+
+h1 {
+    padding-top: 100px;
+    color: #0066CA;
+}
+
+.label-check{
+    padding-right: 70%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+

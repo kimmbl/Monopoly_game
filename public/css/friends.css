@@ -1,0 +1,28 @@
+.info {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.friend-avatar {
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    float: left;
+}
+
+.friend-name {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.right-info {
+    float: right;
+    text-align: right;
+}
+
+a, a:hover {
+    color: black;
+}
