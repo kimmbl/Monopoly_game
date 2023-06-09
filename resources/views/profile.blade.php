@@ -34,6 +34,44 @@
                                 <p>Місій виконано: {{$stats->missions_completed}}</p>
                                 <p>Повідомлень надіслано: {{$stats->messages_sent}}</p>
                                 <hr>
+                                @if($user->id != Auth::id() && (!$user->is_admin)  && (Auth::user()->is_admin || Auth::user()->is_moderator))
+                                    @if(!($user->is_muted))
+                                        <form action="{{route('mute')}}" method="POST">
+                                            @method('PUT')
+                                            @csrf
+                                            <button class="btn-sm btn-outline-info" type="submit">Замутити
+                                            </button>
+                                            <input type="hidden" name="user_id" value="{{$user->id}}">
+                                        </form>
+                                    @else
+                                        <form action="{{route('unmute')}}" method="POST">
+                                            @method('PUT')
+                                            @csrf
+                                            <button class="btn-sm btn-outline-info" type="submit">Розмутити
+                                            </button>
+                                            <input type="hidden" name="user_id" value="{{$user->id}}">
+                                        </form>
+                                    @endif
+                                    @if(Auth::user()->is_admin)
+                                        @if(!($user->is_banned))
+                                            <form action="{{route('ban')}}" method="POST">
+                                                @method('PUT')
+                                                @csrf
+                                                <button class="btn-sm btn-outline-danger" type="submit">Заблокувати
+                                                </button>
+                                                <input type="hidden" name="user_id" value="{{$user->id}}">
+                                            </form>
+                                        @else
+                                            <form action="{{route('unban')}}" method="POST">
+                                                @method('PUT')
+                                                @csrf
+                                                <button class="btn-sm btn-outline-danger" type="submit">Розблокувати
+                                                </button>
+                                                <input type="hidden" name="user_id" value="{{$user->id}}">
+                                            </form>
+                                        @endif
+                                    @endif
+                                @endif
                                 @if(!$is_friends)
                                     <form method="POST" action="{{route('add_friend')}}">
                                         @csrf
