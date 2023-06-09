@@ -578,7 +578,7 @@ class Game extends Component
         return view('livewire.game');
     }
 
-    // poddanie się
+    // здатись
     public function surrender()
     {
         switch ($this->player) {
