@@ -16,8 +16,8 @@
                             <div
                                 class="firstLine firstLine-top rotation2">
                                 <b>{{$properties[$i]->name}}</b> @if($properties[$i]->type == 'field' && $live_properties[$i]->rent)
-                                    <br>Оренда:<br> {{$live_properties[$i]->rent}}
-                                    $ @elseif($properties[$i]->type == 'field') <br>
+                                    <br>Оренда:<br> {{$live_properties[$i]->rent}}$ 
+                                    @elseif($properties[$i]->type == 'field') <br>
                                     {{$live_properties[$i]->price}}$ @endif </div>
                         @endif
                         <div class="player-tokens topSide">
